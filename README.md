@@ -1,9 +1,9 @@
-# The seeded-defect corpus
+# plantedbugs
 
-A benchmark for grading AI code reviewers. Each fixture pairs a small, self-contained repository
-with a change — one that either introduces a specific seeded defect or does not — an approved plan
-the change is judged against, and a written record of what counts as detecting the defect, if there
-is one.
+A hundred planted defects for grading AI code reviewers, with the clean changes that fool them
+mixed in. Each fixture pairs a small, self-contained repository with a change — one that either
+introduces a specific seeded defect or does not — an approved plan the change is judged against,
+and a written record of what counts as detecting the defect, if there is one.
 
 The fixtures are props: fictional products that exist only to grade a reviewer, not real ones. A
 fixture's features, package names and file paths describe nothing beyond that fixture. A subset of
@@ -106,6 +106,9 @@ CC-BY-4.0, in `LICENSE-FIXTURES.txt`, as data. See `NOTICE` for which licence co
 
 ## Citing this corpus
 
-If you use this corpus in published work or a public benchmark, please cite the repository and its
-release or commit, and note which licence covers the material you use — the format (Apache-2.0) or
-the fixture content (CC-BY-4.0).
+If you use this corpus in published work or a public benchmark, please cite the repository
+(https://github.com/lianmatsuo/plantedbugs) and its release or commit, and note which licence
+covers the material you use — the format (Apache-2.0) or the fixture content (CC-BY-4.0).
+
+Maintained by [Lian Matsuo](https://github.com/lianmatsuo). The reviewer these fixtures were built
+to grade is a closed product, Ayaori; nothing of it is published here.
