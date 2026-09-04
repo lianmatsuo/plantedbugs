@@ -19,7 +19,9 @@
   "why_it_is_hard": "The change deletes twenty lines and adds five, replacing bespoke code with a standard-library call — the direction a reviewer is trained to approve. The eslint-disable comment even states the compatibility reasoning, which reads as evidence the author checked. What it cannot show is that the platform function is less correct than the code it replaces, on an operating system the reviewer is not running.",
   "expected_detection": {
     "mode": "blocking",
-    "criterion_ids": [],
+    "criterion_ids": [
+      "ac_2"
+    ],
     "files": [
       "packages/create-vite/src/index.ts"
     ],

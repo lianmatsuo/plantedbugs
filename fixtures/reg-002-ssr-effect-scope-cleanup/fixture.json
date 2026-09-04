@@ -19,7 +19,9 @@
   "why_it_is_hard": "The change is careful in every visible way — it collects scopes, stops them in a `finally`, aggregates the first error rather than swallowing it, and adds eighty lines of tests. What it gets wrong is that stopping a scope is not a neutral act: it runs user code. Nothing in the diff says so, and the reviewer has to know what `scope.stop()` invokes.",
   "expected_detection": {
     "mode": "blocking",
-    "criterion_ids": [],
+    "criterion_ids": [
+      "ac_1"
+    ],
     "files": [
       "packages/server-renderer/src/render.ts"
     ],

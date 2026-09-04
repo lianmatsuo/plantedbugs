@@ -18,7 +18,9 @@
   "why_it_is_hard": "The change is small, closes a real reported issue, ships 116 lines of new tests, and those tests pass. It is correct against its own stated intent. What it breaks is not visible in the diff and not mentioned in the plan: the fallback runs on the shared slot-resolution path used by every component, including KeepAlive, so a component that legitimately has no slot of that name now finds one.",
   "expected_detection": {
     "mode": "blocking",
-    "criterion_ids": [],
+    "criterion_ids": [
+      "ac_2"
+    ],
     "files": [
       "packages/runtime-core/src/component.ts"
     ],

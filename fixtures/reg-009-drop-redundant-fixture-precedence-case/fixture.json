@@ -18,7 +18,9 @@
   "why_it_is_hard": "It is a pure deletion in one file with a commit message that reasons its way to the deletion, names the commit that introduced the special case, and names the mechanism that supersedes it. Every claim in that reasoning is true. The hole is a case the reasoning does not mention and the suite does not cover — a reviewer has to ask what `indirect=True` does to the argument, which requires knowing pytest's fixture resolution rather than reading the diff.",
   "expected_detection": {
     "mode": "blocking",
-    "criterion_ids": [],
+    "criterion_ids": [
+      "ac_1"
+    ],
     "files": [
       "src/_pytest/fixtures.py"
     ],

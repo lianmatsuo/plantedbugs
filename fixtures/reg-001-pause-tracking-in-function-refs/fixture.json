@@ -18,7 +18,9 @@
   "why_it_is_hard": "The change is five lines, has a test, is correct against its own stated intent, and reads as textbook defensive reactivity hygiene. What it breaks is not visible from the diff and not mentioned in the plan — it is a property of function refs documented in two issues from 2021. A reviewer has to know, or work out, that suppressing tracking here is a behaviour change rather than an optimisation.",
   "expected_detection": {
     "mode": "blocking",
-    "criterion_ids": [],
+    "criterion_ids": [
+      "ac_2"
+    ],
     "files": [
       "packages/runtime-core/src/rendererTemplateRef.ts"
     ],
