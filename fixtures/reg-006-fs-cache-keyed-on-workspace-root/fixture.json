@@ -19,7 +19,9 @@
   "why_it_is_hard": "Two lines, in a function about cache keys, and the change is a performance improvement that works. The defect is a mismatch between two subsystems — what the cache covers and what the watcher invalidates — and neither the diff nor the file mentions the watcher at all.",
   "expected_detection": {
     "mode": "blocking",
-    "criterion_ids": [],
+    "criterion_ids": [
+      "ac_2"
+    ],
     "files": [
       "packages/vite/src/node/fsUtils.ts"
     ],

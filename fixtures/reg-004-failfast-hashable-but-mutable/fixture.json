@@ -19,7 +19,9 @@
   "why_it_is_hard": "Three lines that look like a pure ergonomics win, and the reviewer has to notice something that is not in the diff at all: that the class has no `frozen=True` and its field is assignable. The rule being broken — a hashable object's hash must not change over its lifetime — is a Python invariant rather than anything the repository states.",
   "expected_detection": {
     "mode": "blocking",
-    "criterion_ids": [],
+    "criterion_ids": [
+      "ac_1"
+    ],
     "files": [
       "pydantic/types.py"
     ],

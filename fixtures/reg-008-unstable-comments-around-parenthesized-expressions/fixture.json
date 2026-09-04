@@ -18,9 +18,12 @@
   "why_it_is_hard": "The change is eight files, mostly snapshots, and it does exactly what it says: an expression whose comment used to move on a second format run stops moving, and a test that was on the known-unstable list comes off it. Every test passes. The breakage is in a different feature that happens to read the same attachment — a reviewer has to know that `prettier-ignore` is implemented on comment position, which no line of the diff says. The one visible signal is an accepted snapshot update under tests/format/js/ignore/ — a prettier-ignored node gains a semicolon — which reads as churn unless the reviewer notices that the directory name is the feature the change is about to break.",
   "expected_detection": {
     "mode": "blocking",
-    "criterion_ids": [],
+    "criterion_ids": [
+      "ac_1"
+    ],
     "files": [
-      "src/language-js/comments/handle-comments.js"
+      "src/language-js/location/overrides.js",
+      "src/language-js/print/ignored.js"
     ],
     "rule_prefixes": []
   },

@@ -18,7 +18,9 @@
   "why_it_is_hard": "This is the hardest shape in the class, because the change looks better than most correct ones: a narrow diff, a changeset, and a runtime test demonstrating exactly the bug it claims to fix. It is checkable against its own criteria and it satisfies them. Judging it needs the question the plan does not ask — is inertness the reason this derived is stale, or the place the staleness happened to be visible — and the diff cannot answer that.",
   "expected_detection": {
     "mode": "blocking",
-    "criterion_ids": [],
+    "criterion_ids": [
+      "ac_1"
+    ],
     "files": [
       "packages/svelte/src/internal/client/reactivity/deriveds.js"
     ],

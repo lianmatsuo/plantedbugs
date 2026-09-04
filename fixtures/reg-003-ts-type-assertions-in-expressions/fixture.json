@@ -19,7 +19,9 @@
   "why_it_is_hard": "`TS_NODE_TYPES` is an existing exported constant and the guard reads as reusing the codebase's own notion of a TypeScript node. The bug is that the set is broader than the case being fixed, and the consequence — a whole operator ceasing to compile — is invisible from a diff that adds a conditional and a passing test.",
   "expected_detection": {
     "mode": "blocking",
-    "criterion_ids": [],
+    "criterion_ids": [
+      "ac_2"
+    ],
     "files": [
       "packages/compiler-core/src/transforms/transformExpression.ts"
     ],
