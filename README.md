@@ -1,7 +1,7 @@
 # plantedbugs
 
-A hundred planted defects for grading AI code reviewers, with the clean changes that fool them
-mixed in. Each fixture pairs a small, self-contained repository with a change — one that either
+A hundred and six planted defects for grading AI code reviewers, with the clean changes that fool
+them mixed in. Each fixture pairs a small, self-contained repository with a change — one that either
 introduces a specific seeded defect or does not — an approved plan the change is judged against,
 and a written record of what counts as detecting the defect, if there is one.
 
